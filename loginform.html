@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-color: #11021d;
+      font-family: "Times new roman";
+    }
+    .login {
+      width: 600px;
+      overflow: hidden;
+      margin-top: 150px;
+      margin-left: 450px;
+      padding: 80px;
+      background: white;
+      border-radius: 5px;
+    }
+
+    h2 {
+      text-align: center;
+      color: rgb(6, 54, 68);
+      padding: 20px;
+      margin-top: -50px;
+      font-size: 30px;
+    }
+
+    #Uname {
+      width: 90%;
+      height: 30px;
+
+      border-radius: 3px;
+      padding-left: 8px;
+    }
+
+    #Pass {
+      width: 90%;
+      height: 30px;
+
+      border-radius: 3px;
+      padding-left: 8px;
+    }
+    .submit {
+      display: block;
+      width: 100%;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      background-color: #04aa6d;
+      padding: 14px 28px;
+      font-size: 16px;
+      cursor: pointer;
+      text-align: center;
+    }
+    input {
+      outline: none;
+
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid lightblue;
+    }
+    input:focus {
+      outline: none;
+
+      box-sizing: border-box;
+      border: none;
+      border-bottom: 2px solid red;
+    }
+  </style>
+  <body>
+    <div class="login">
+      <form id="login" method="get" action="login.php">
+        <h2><u>Sign in</u></h2>
+        <label><b>Username </b> </label>
+        <br />
+        <i class="fas fa-user"></i>
+        <input type="text" id="Uname" name="Uname" placeholder="Username" />
+
+        <br /><br />
+        <label><b>Password </b> </label>
+
+        <br />
+        <i class="fas fa-key"></i
+        ><input type="Password" name="Pass" id="Pass" placeholder="Password" />
+
+        <br /><br />
+
+        <input type="checkbox" id="check" />
+        <span>Remember me</span>
+        <br /><br />
+        <button type="submit" class="submit">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
